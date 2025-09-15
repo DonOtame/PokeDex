@@ -1,0 +1,62 @@
+{
+  "auth-layout": {
+    "welcome": "Bienvenido a"
+  },
+  "login": {
+    "title": "Iniciar sesión",
+    "email": "Correo",
+    "emailRequired": "El correo es obligatorio.",
+    "emailInvalid": "Por favor, introduce una dirección de correo válida.",
+    "password": "Contraseña",
+    "passwordRequired": "La contraseña es obligatoria.",
+    "rememberPassword": "Recordar contraseña",
+    "loginButton": "Iniciar sesión",
+    "noAccount": "Si no tienes una cuenta,",
+    "signUp": "regístrate aquí."
+  },
+  "register": {
+    "title": "Regístrate",
+    "name": "Nombre",
+    "nameRequired": "El nombre es obligatorio.",
+    "lastName": "Apellido",
+    "lastNameRequired": "El apellido es obligatorio.",
+    "email": "Correo",
+    "emailRequired": "El correo es obligatorio.",
+    "emailInvalid": "Por favor, introduce una dirección de correo válida.",
+    "phone": "Teléfono",
+    "city": "Ciudad",
+    "hasReference": "¿Tienes una referencia?",
+    "hasReference.Yes": "Sí",
+    "hasReference.No": "No",
+    "password": "Contraseña",
+    "passwordPrompt": "Ingresa una contraseña segura.",
+    "passwordWeak": "Baja",
+    "passwordMedium": "Media",
+    "passwordStrong": "Alta",
+    "passwordRequired": "La contraseña es obligatoria.",
+    "passwordMinLength": "La contraseña debe tener al menos 8 caracteres.",
+    "passwordPattern": "La contraseña debe incluir mayúsculas, minúsculas y números.",
+    "confirmPassword": "Confirmar contraseña",
+    "confirmPasswordRequired": "La confirmación de la contraseña es obligatoria.",
+    "passwordsMismatch": "Las contraseñas no coinciden.",
+    "registerButton": "Siguiente",
+    "hasAccount": "Si ya tienes una cuenta,",
+    "signIn": "inicia sesión aquí."
+  },
+  "TOAST": {
+    "LOGIN": {
+      "SUCCESS": "Inicio de sesión exitoso",
+      "INVALID_CREDENTIALS": "Usuario o contraseña incorrectos",
+      "ERROR": "Error durante el inicio de sesión"
+    },
+    "REGISTER": {
+      "SUCCESS": "Registro exitoso",
+      "INVALID_CREDENTIALS": "Correo ya en uso",
+      "ERROR": "Error durante el registro"
+    },
+    "LOGOUT": {
+      "SUCCESS": "Cierre de sesión exitoso",
+      "ERROR": "Error durante el cierre de sesión"
+    }
+  }
+}
