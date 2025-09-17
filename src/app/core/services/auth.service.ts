@@ -1,10 +1,15 @@
-import { Injectable } from '@angular/core';
+import { inject, Injectable, signal } from '@angular/core';
 import { NewUser, User, UserEntity } from '../models';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
+  private router = inject(Router);
+
+  private currentUser = signal<User | null>(null);
+
   async login(email: string, password: string, rememberMe: boolean): Promise<void> {
     const users: UserEntity[] = JSON.parse(localStorage.getItem('users') || '[]');
     const user = users.find((u) => u.email === email && u.password === password);
@@ -13,13 +18,14 @@ export class AuthService {
 
     const { password: _password, ...rest } = user;
     const currentUser: User = rest;
-
+    this.currentUser.set(currentUser);
     try {
       if (rememberMe) {
         localStorage.setItem('currentUser', JSON.stringify(currentUser));
       } else {
         sessionStorage.setItem('currentUser', JSON.stringify(currentUser));
       }
+      this.router.navigate(['/']);
     } catch (error) {
       throw new Error('TOAST.LOGIN.ERROR');
     }
@@ -55,9 +61,19 @@ export class AuthService {
     }
   }
 
+  public isLoggedIn(): boolean {
+    const user = this.getCurrentUserFromStorage();
+    return user !== null;
+  }
+
   private generateId(): string {
     return (
       Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
     );
+  }
+
+  private getCurrentUserFromStorage(): User | null {
+    const userData = localStorage.getItem('currentUser') || sessionStorage.getItem('currentUser');
+    return userData ? (JSON.parse(userData) as User) : null;
   }
 }

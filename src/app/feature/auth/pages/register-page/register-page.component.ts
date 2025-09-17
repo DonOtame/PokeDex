@@ -7,10 +7,11 @@ import {
   AbstractControl,
 } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
-import { NewUser } from '@core/core/models';
-import { AuthService, CitiesService, ToastService } from '@core/core/services';
-import { isInvalidForm, isInvalidInput } from '@core/shared/utils';
+import { NewUser } from '@core/models';
+import { AuthService, ToastService, CitiesService } from '@core/services';
+
 import { TranslateModule } from '@ngx-translate/core';
+import { isInvalidForm, isInvalidInput } from '@shared/utils';
 import { ButtonModule } from 'primeng/button';
 import { CheckboxModule } from 'primeng/checkbox';
 import { InputTextModule } from 'primeng/inputtext';

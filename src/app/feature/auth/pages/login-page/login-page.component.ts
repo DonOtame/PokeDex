@@ -1,9 +1,9 @@
 import { Component, ChangeDetectionStrategy, inject } from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormControl, Validators } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { AuthService, ToastService } from '@core/core/services';
-import { isInvalidForm, isInvalidInput } from '@core/shared/utils';
+import { AuthService, ToastService } from '@core/services';
 import { TranslateModule } from '@ngx-translate/core';
+import { isInvalidForm, isInvalidInput } from '@shared/utils';
 import { ButtonModule } from 'primeng/button';
 import { CheckboxModule } from 'primeng/checkbox';
 import { InputTextModule } from 'primeng/inputtext';

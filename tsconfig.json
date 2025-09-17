@@ -5,7 +5,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@core/*": ["src/app/*"],
+      "@core/*": ["src/app/core/*"],
       "@shared/*": ["src/app/shared/*"],
       "@feature/*": ["src/app/feature/*"],
       "@env/*": ["src/environments/*"]
