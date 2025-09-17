@@ -14,6 +14,7 @@ import { providePrimeNG } from 'primeng/config';
 import { MessageService } from 'primeng/api';
 import { routes } from './app.routes';
 import Noir from './noir-theme';
+import { CookieService } from 'ngx-cookie-service';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -41,7 +42,8 @@ export const appConfig: ApplicationConfig = {
     MessageService,
     provideAppInitializer(() => {
       const translate = inject(TranslateService);
-      const browserLang = translate.getBrowserLang();
+      const cookie = inject(CookieService);
+      const browserLang = cookie.get('lang') || translate.getBrowserLang();
       translate.addLangs(['es', 'en', 'pt']);
       translate.setFallbackLang('es');
       translate.use(browserLang || 'es');

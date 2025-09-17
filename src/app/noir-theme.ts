@@ -55,10 +55,14 @@ const Noir = definePreset(Aura, {
         borderRadius: '0',
         borderColor: '{zinc.950}',
       },
+
       item: {
         color: '{zinc.50}',
-        activeBackground: '{zinc.700}',
+        focusBackground: '{zinc.800}',
+        focusColor: '{zinc.50}',
+        activeBackground: '{zinc.200}',
       },
+
       submenu: {
         background: '{zinc.950}',
         borderColor: '{zinc.700}',

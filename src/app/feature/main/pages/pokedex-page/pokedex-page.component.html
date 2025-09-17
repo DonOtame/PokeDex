@@ -1,0 +1,26 @@
+<div class="flex flex-row justify-between gap-2 items-start">
+  <pokemon-filters class="grow" />
+  <p-button
+    label="Capturar nuevos Pokemon"
+    (click)="showTable()"
+    styleClass="rounded-full! px-6!"
+  />
+
+  <p-dialog
+    [(visible)]="display"
+    [modal]="true"
+    [style]="{ width: '80rem', height: '90vh' }"
+    [draggable]="false"
+    [resizable]="false"
+  >
+    <ng-template pTemplate="header">
+      <h2 class="text-lg font-bold">Buscar Pokemon</h2>
+    </ng-template>
+    <pokemon-search-table />
+
+    <!-- Footer opcional con botones -->
+    <ng-template pTemplate="footer">
+      <p-button label="Cerrar" (onClick)="display.set(false)" />
+    </ng-template>
+  </p-dialog>
+</div>
