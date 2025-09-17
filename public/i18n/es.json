@@ -43,6 +43,60 @@
     "hasAccount": "Si ya tienes una cuenta,",
     "signIn": "inicia sesión aquí."
   },
+
+  "main-layout": {
+    "home": "Inicio",
+    "pokedex": "Pokedex",
+    "logout": "Cerrar sesión",
+    "my-teams": "Mis equipos"
+  },
+
+  "avatar": {
+    "logout": "Cerrar sesión"
+  },
+
+  "filter": {
+    "title": "Filtros",
+    "input": "Buscar Pokémon...",
+    "placeholder": {
+      "type": "Tipo",
+      "region": "Región",
+      "generation": "Generación"
+    },
+    "apply": "Aplicar",
+    "clear": "Eliminar filtros"
+  },
+
+  "filters": {
+    "allTypes": "Todos los tipos",
+    "allRegions": "Todas las regiones",
+    "allGenerations": "Todas las generaciones"
+  },
+
+  "pokemonType": {
+    "normal": "Normal",
+    "fighting": "Lucha",
+    "flying": "Volador",
+    "poison": "Veneno",
+    "ground": "Tierra",
+    "rock": "Roca",
+    "bug": "Bicho",
+    "ghost": "Fantasma",
+    "steel": "Acero",
+    "fire": "Fuego",
+    "water": "Agua",
+    "grass": "Planta",
+    "electric": "Eléctrico",
+    "psychic": "Psíquico",
+    "ice": "Hielo",
+    "dragon": "Dragón",
+    "dark": "Siniestro",
+    "fairy": "Hada",
+    "stellar": "Estelar",
+    "unknown": "Desconocido",
+    "shadow": "Sombra"
+  },
+
   "TOAST": {
     "LOGIN": {
       "SUCCESS": "Inicio de sesión exitoso",

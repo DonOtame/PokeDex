@@ -43,6 +43,60 @@
     "hasAccount": "Se você já tem uma conta,",
     "signIn": "inicie sessão aqui."
   },
+
+  "main-layout": {
+    "home": "Início",
+    "pokedex": "Pokedex",
+    "logout": "Sair",
+    "my-teams": "Meus Times"
+  },
+
+  "avatar": {
+    "logout": "Sair"
+  },
+
+  "filter": {
+    "title": "Filtros",
+    "input": "Buscar Pokémon...",
+    "placeholder": {
+      "type": "Tipo",
+      "region": "Região",
+      "generation": "Geração"
+    },
+    "apply": "Aplicar",
+    "clear": "Eliminar filtros"
+  },
+
+  "filters": {
+    "allTypes": "Todos os tipos",
+    "allRegions": "Todas as regiões",
+    "allGenerations": "Todas as gerações"
+  },
+
+  "pokemonType": {
+    "normal": "Normal",
+    "fighting": "Lutador",
+    "flying": "Voador",
+    "poison": "Veneno",
+    "ground": "Terrestre",
+    "rock": "Pedra",
+    "bug": "Inseto",
+    "ghost": "Fantasma",
+    "steel": "Aço",
+    "fire": "Fogo",
+    "water": "Água",
+    "grass": "Grama",
+    "electric": "Elétrico",
+    "psychic": "Psíquico",
+    "ice": "Gelo",
+    "dragon": "Dragão",
+    "dark": "Sombrio",
+    "fairy": "Fada",
+    "stellar": "Estelar",
+    "unknown": "Desconhecido",
+    "shadow": "Sombra"
+  },
+
   "TOAST": {
     "LOGIN": {
       "SUCCESS": "Login bem-sucedido",

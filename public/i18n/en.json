@@ -43,6 +43,60 @@
     "hasAccount": "If you already have an account,",
     "signIn": "sign in here."
   },
+
+  "main-layout": {
+    "home": "Home",
+    "pokedex": "Pokedex",
+    "logout": "Logout",
+    "my-teams": "My Teams"
+  },
+
+  "avatar": {
+    "logout": "Logout"
+  },
+
+  "filter": {
+    "title": "Filters",
+    "input": "Search Pokémon...",
+    "placeholder": {
+      "type": "Type",
+      "region": "Region",
+      "generation": "Generation"
+    },
+    "apply": "Apply Filters",
+    "clear": "Clear Filters"
+  },
+
+  "filters": {
+    "allTypes": "All Types",
+    "allRegions": "All Regions",
+    "allGenerations": "All Generations"
+  },
+
+  "pokemonType": {
+    "normal": "Normal",
+    "fighting": "Fighting",
+    "flying": "Flying",
+    "poison": "Poison",
+    "ground": "Ground",
+    "rock": "Rock",
+    "bug": "Bug",
+    "ghost": "Ghost",
+    "steel": "Steel",
+    "fire": "Fire",
+    "water": "Water",
+    "grass": "Grass",
+    "electric": "Electric",
+    "psychic": "Psychic",
+    "ice": "Ice",
+    "dragon": "Dragon",
+    "dark": "Dark",
+    "fairy": "Fairy",
+    "stellar": "Stellar",
+    "unknown": "Unknown",
+    "shadow": "Shadow"
+  },
+
   "TOAST": {
     "LOGIN": {
       "SUCCESS": "Login successful",
