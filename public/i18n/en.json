@@ -63,7 +63,7 @@
       "region": "Region",
       "generation": "Generation"
     },
-    "apply": "Apply Filters",
+    "apply": "Apply",
     "clear": "Clear Filters"
   },
 
@@ -71,6 +71,35 @@
     "allTypes": "All Types",
     "allRegions": "All Regions",
     "allGenerations": "All Generations"
+  },
+
+  "pokedexPage": {
+    "captureNew": "Capture New Pokémon",
+    "findPokemon": "Find Pokémon",
+    "add": "Add",
+    "cancel": "Cancel",
+    "results": "results",
+    "noPokemon": "No Pokémon in your Pokedex",
+    "noPokemonDescription": "No Pokémon found with these criteria. Try different filters or add a new Pokémon."
+  },
+
+  "pokemonSearchTable": {
+    "notFound": "No Pokémon found",
+    "name": "Name",
+    "type": "Type",
+    "level": "Level",
+    "region": "Region",
+    "generation": "Generation",
+    "hp": "HP",
+    "attack": "ATK",
+    "defense": "DEF",
+    "speed": "SPD",
+    "add": "Add"
+  },
+
+  "pokemonCard": {
+    "height": "Height",
+    "weight": "Weight"
   },
 
   "pokemonType": {
@@ -111,6 +140,12 @@
     "LOGOUT": {
       "SUCCESS": "Logout successful",
       "ERROR": "Error during logout"
+    },
+    "POKEDEX": {
+      "ADD_SUCCESS": "Pokémon added to Pokedex",
+      "ADD_ERROR": "Error adding Pokémon to Pokedex",
+      "REMOVE_SUCCESS": "Pokémon removed from Pokedex",
+      "REMOVE_ERROR": "Error removing Pokémon from Pokedex"
     }
   }
 }

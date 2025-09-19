@@ -56,6 +56,8 @@ export class AuthService {
     try {
       localStorage.removeItem('currentUser');
       sessionStorage.removeItem('currentUser');
+      this.currentUser.set(null);
+      await this.router.navigate(['auth', 'login']);
     } catch (error) {
       throw new Error('TOAST.LOGOUT.ERROR');
     }
@@ -75,5 +77,13 @@ export class AuthService {
   private getCurrentUserFromStorage(): User | null {
     const userData = localStorage.getItem('currentUser') || sessionStorage.getItem('currentUser');
     return userData ? (JSON.parse(userData) as User) : null;
+  }
+
+  public getCurrentUser(): User | null {
+    if (this.currentUser() === null) {
+      const user = this.getCurrentUserFromStorage();
+      this.currentUser.set(user);
+    }
+    return this.currentUser();
   }
 }

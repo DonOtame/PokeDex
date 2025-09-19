@@ -4,6 +4,7 @@ export * from './cities.service';
 export * from './language.service';
 export * from './poke-filters-api.service';
 export * from './poke-filters-data.service';
+export * from './pokedex.service';
 export * from './pokemon-api.service';
 export * from './pokemon-data.service';
 export * from './toast.service';

@@ -4,7 +4,7 @@ export interface FilterOption {
 }
 
 export interface PokemonFilters {
-  search: string;
+  search?: string;
   type?: string;
   region?: string;
   generation?: string;

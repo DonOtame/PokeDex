@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { authRoutes } from './feature/auth/auth.routes';
-import { authGuard } from './core/guards';
+import { authGuard, guessGuard } from './core/guards';
 import { mainRoutes } from './feature/main/main.routes';
 
 const loadAuthLayout = () => import('@feature/auth/layout/auth-layout.component');
@@ -16,6 +16,7 @@ export const routes: Routes = [
   {
     path: '',
     loadComponent: loadMainLayout,
+    canActivate: [guessGuard],
     children: mainRoutes,
   },
   {

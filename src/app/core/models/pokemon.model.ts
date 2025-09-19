@@ -1,207 +1,87 @@
-export interface PokemonResponse {
-  count: number;
-  next: null;
-  previous: null;
-  results: PokemonData[];
-}
-
-export interface PokemonData {
-  name: string;
-  url: string;
-}
-
-export interface PokemonFlat {
+export interface Pokemon {
   id: number;
   name: string;
-  types: string[];
-  baseExp: number;
+  image: null | string;
+  level: number;
+  hp: number;
   attack: number;
   defense: number;
+  special_attack: number;
   speed: number;
-  sprite: string;
-}
-
-export interface PokemonURLResponse {
-  abilities: Ability[];
-  base_experience: number;
-  cries: Cries;
-  forms: Species[];
-  game_indices: GameIndex[];
+  experience: number;
   height: number;
-  held_items: any[];
-  id: number;
-  is_default: boolean;
-  location_area_encounters: string;
-  moves: Move[];
-  name: string;
-  order: number;
-  past_abilities: PastAbility[];
-  past_types: any[];
-  species: Species;
-  sprites: Sprites;
-  stats: Stat[];
-  types: Type[];
   weight: number;
+  types: Type[];
+  generation: Generation;
+  region: Region;
 }
 
-export interface Ability {
-  ability: Species | null;
-  is_hidden: boolean;
-  slot: number;
+export enum Generation {
+  GenerationI = 'generation-i',
+  GenerationIi = 'generation-ii',
+  GenerationIii = 'generation-iii',
+  GenerationIv = 'generation-iv',
+  GenerationIx = 'generation-ix',
+  GenerationV = 'generation-v',
+  GenerationVi = 'generation-vi',
+  GenerationVii = 'generation-vii',
+  GenerationViii = 'generation-viii',
+  Unknown = 'unknown',
 }
 
-export interface Species {
-  name: string;
-  url: string;
+export enum Region {
+  Alola = 'alola',
+  Galar = 'galar',
+  Hoenn = 'hoenn',
+  Johto = 'johto',
+  Kalos = 'kalos',
+  Kanto = 'kanto',
+  Paldea = 'paldea',
+  Sinnoh = 'sinnoh',
+  Unova = 'unova',
+  Unknown = 'unknown',
 }
 
-export interface Cries {
-  latest: string;
-  legacy: string;
+export enum Type {
+  Bug = 'bug',
+  Dark = 'dark',
+  Dragon = 'dragon',
+  Electric = 'electric',
+  Fairy = 'fairy',
+  Fighting = 'fighting',
+  Fire = 'fire',
+  Flying = 'flying',
+  Ghost = 'ghost',
+  Grass = 'grass',
+  Ground = 'ground',
+  Ice = 'ice',
+  Normal = 'normal',
+  Poison = 'poison',
+  Psychic = 'psychic',
+  Rock = 'rock',
+  Steel = 'steel',
+  Water = 'water',
+  Unknown = 'unknown',
 }
 
-export interface GameIndex {
-  game_index: number;
-  version: Species;
-}
-
-export interface Move {
-  move: Species;
-  version_group_details: VersionGroupDetail[];
-}
-
-export interface VersionGroupDetail {
-  level_learned_at: number;
-  move_learn_method: Species;
-  order: number | null;
-  version_group: Species;
-}
-
-export interface PastAbility {
-  abilities: Ability[];
-  generation: Species;
-}
-
-export interface GenerationV {
-  'black-white': Sprites;
-}
-
-export interface GenerationIv {
-  'diamond-pearl': Sprites;
-  'heartgold-soulsilver': Sprites;
-  platinum: Sprites;
-}
-
-export interface Versions {
-  'generation-i': GenerationI;
-  'generation-ii': GenerationIi;
-  'generation-iii': GenerationIii;
-  'generation-iv': GenerationIv;
-  'generation-v': GenerationV;
-  'generation-vi': { [key: string]: Home };
-  'generation-vii': GenerationVii;
-  'generation-viii': GenerationViii;
-}
-
-export interface Other {
-  dream_world: DreamWorld;
-  home: Home;
-  'official-artwork': OfficialArtwork;
-  showdown: Sprites;
-}
-
-export interface Sprites {
-  back_default: string;
-  back_female: null;
-  back_shiny: string;
-  back_shiny_female: null;
-  front_default: string;
-  front_female: null;
-  front_shiny: string;
-  front_shiny_female: null;
-  other?: Other;
-  versions?: Versions;
-  animated?: Sprites;
-}
-
-export interface GenerationI {
-  'red-blue': RedBlue;
-  yellow: RedBlue;
-}
-
-export interface RedBlue {
-  back_default: string;
-  back_gray: string;
-  back_transparent: string;
-  front_default: string;
-  front_gray: string;
-  front_transparent: string;
-}
-
-export interface GenerationIi {
-  crystal: Crystal;
-  gold: Gold;
-  silver: Gold;
-}
-
-export interface Crystal {
-  back_default: string;
-  back_shiny: string;
-  back_shiny_transparent: string;
-  back_transparent: string;
-  front_default: string;
-  front_shiny: string;
-  front_shiny_transparent: string;
-  front_transparent: string;
-}
-
-export interface Gold {
-  back_default: string;
-  back_shiny: string;
-  front_default: string;
-  front_shiny: string;
-  front_transparent?: string;
-}
-
-export interface GenerationIii {
-  emerald: OfficialArtwork;
-  'firered-leafgreen': Gold;
-  'ruby-sapphire': Gold;
-}
-
-export interface OfficialArtwork {
-  front_default: string;
-  front_shiny: string;
-}
-
-export interface Home {
-  front_default: string;
-  front_female: null;
-  front_shiny: string;
-  front_shiny_female: null;
-}
-
-export interface GenerationVii {
-  icons: DreamWorld;
-  'ultra-sun-ultra-moon': Home;
-}
-
-export interface DreamWorld {
-  front_default: string;
-  front_female: null;
-}
-
-export interface GenerationViii {
-  icons: DreamWorld;
-}
-
-export interface Stat {
-  base_stat: number;
-  effort: number;
-  stat: Species;
-}
-
-export interface Type {
-  slot: number;
-  type: Species;
-}
+export const TypeColors: Record<Type, { background: string; text: string }> = {
+  [Type.Bug]: { background: '#A8B820', text: '#FFFFFF' },
+  [Type.Dark]: { background: '#705848', text: '#FFFFFF' },
+  [Type.Dragon]: { background: '#7038F8', text: '#FFFFFF' },
+  [Type.Electric]: { background: '#F8D030', text: '#000000' },
+  [Type.Fairy]: { background: '#EE99AC', text: '#000000' },
+  [Type.Fighting]: { background: '#C03028', text: '#FFFFFF' },
+  [Type.Fire]: { background: '#F08030', text: '#FFFFFF' },
+  [Type.Flying]: { background: '#A890F0', text: '#000000' },
+  [Type.Ghost]: { background: '#705898', text: '#FFFFFF' },
+  [Type.Grass]: { background: '#78C850', text: '#000000' },
+  [Type.Ground]: { background: '#E0C068', text: '#000000' },
+  [Type.Ice]: { background: '#98D8D8', text: '#000000' },
+  [Type.Normal]: { background: '#A8A878', text: '#000000' },
+  [Type.Poison]: { background: '#A040A0', text: '#FFFFFF' },
+  [Type.Psychic]: { background: '#F85888', text: '#FFFFFF' },
+  [Type.Rock]: { background: '#B8A038', text: '#000000' },
+  [Type.Steel]: { background: '#B8B8D0', text: '#000000' },
+  [Type.Water]: { background: '#6890F0', text: '#FFFFFF' },
+  [Type.Unknown]: { background: '#68A090', text: '#FFFFFF' },
+};

@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
+import { AuthService } from '@core/services';
 import { TranslateService } from '@ngx-translate/core';
 import { MenuItem } from 'primeng/api';
 import { AvatarModule } from 'primeng/avatar';
@@ -12,6 +13,7 @@ import { MenuModule } from 'primeng/menu';
 })
 export class AvatarComponent {
   private translate = inject(TranslateService);
+  private authService = inject(AuthService);
 
   private menuConfig: { key: string; icon: string; command: () => void }[] = [
     { key: 'avatar.logout', icon: 'pi pi-sign-out', command: () => this.logout() },
@@ -35,5 +37,7 @@ export class AvatarComponent {
     });
   }
 
-  logout() {}
+  logout() {
+    this.authService.logout();
+  }
 }

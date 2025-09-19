@@ -64,13 +64,42 @@
       "generation": "Geração"
     },
     "apply": "Aplicar",
-    "clear": "Eliminar filtros"
+    "clear": "Eliminar Filtros"
   },
 
   "filters": {
     "allTypes": "Todos os tipos",
     "allRegions": "Todas as regiões",
     "allGenerations": "Todas as gerações"
+  },
+
+  "pokedexPage": {
+    "captureNew": "Capturar novo Pokémon",
+    "findPokemon": "Buscar Pokémon",
+    "add": "Adicionar",
+    "cancel": "Cancelar",
+    "results": "resultados",
+    "noPokemon": "Nenhum Pokémon na sua Pokédex",
+    "noPokemonDescription": "Não se encontraram Pokémon com estes critérios. Tente com outros filtros ou adicione um novo Pokémon."
+  },
+
+  "pokemonSearchTable": {
+    "notFound": "Nenhum Pokémon encontrado",
+    "name": "Nome",
+    "type": "Tipo",
+    "level": "Nível",
+    "region": "Região",
+    "generation": "Geração",
+    "hp": "PS",
+    "attack": "ATK",
+    "defense": "DEF",
+    "speed": "SPD",
+    "add": "Adicionar"
+  },
+
+  "pokemonCard": {
+    "height": "Altura",
+    "weight": "Peso"
   },
 
   "pokemonType": {
@@ -111,6 +140,12 @@
     "LOGOUT": {
       "SUCCESS": "Logout bem-sucedido",
       "ERROR": "Erro durante o logout"
+    },
+    "POKEDEX": {
+      "ADD_SUCCESS": "Pokémon adicionado à Pokédex",
+      "ADD_ERROR": "Erro ao adicionar o Pokémon à Pokédex",
+      "REMOVE_SUCCESS": "Pokémon removido da Pokédex",
+      "REMOVE_ERROR": "Erro ao remover o Pokémon da Pokédex"
     }
   }
 }
