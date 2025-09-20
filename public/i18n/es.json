@@ -127,6 +127,29 @@
     "power": "Poder"
   },
 
+  "myTeamsPage": {
+    "myTeams": "Mis equipos",
+    "manageYourTeams": "Crea y gestiona tus equipos pokemon",
+    "newTeam": "Nuevo equipo"
+  },
+
+  "teamForm": {
+    "teamName": "Nombre del equipo",
+    "maxMembers": "Límite de Pokemons (opcional)",
+    "teamMembersDescription": "Define cuántos pokemon puede tener tu qeuipo."
+  },
+
+  "teamSummary": {
+    "typesDistribution": "Distribución de tipos",
+    "teamStats": "Estadísticas del equipo",
+    "createdOn": "Creado el",
+    "hp": "PS",
+    "attack": "Ataque",
+    "defense": "Defensa",
+    "speed": "Velocidad",
+    "specialAttack": "Ataque Especial"
+  },
+
   "pokemonType": {
     "normal": "Normal",
     "fighting": "Lucha",

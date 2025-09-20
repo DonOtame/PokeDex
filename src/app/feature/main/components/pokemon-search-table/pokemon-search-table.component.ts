@@ -1,7 +1,16 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, inject, output, signal } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  effect,
+  inject,
+  input,
+  output,
+  signal,
+} from '@angular/core';
 import { Pokemon, PokemonFilters, Type } from '@core/models';
-import { PokemonDataService } from '@core/services';
+import { PokedexService, PokemonDataService } from '@core/services';
 import { PokemonFiltersComponent } from '@shared/components/pokemon-filters/pokemon-filters.component';
 import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
@@ -24,8 +33,21 @@ import { PokemonTypesComponent } from '@feature/main/components/pokemon-types/po
 })
 export class PokemonSearchTableComponent {
   private pokemonData = inject(PokemonDataService);
+  private pokedexService = inject(PokedexService);
 
-  pokemons = this.pokemonData.pokemons;
+  usePokedex = input<boolean>(false);
+
+  pokemons = computed(() =>
+    this.usePokedex() ? this.pokedexService.pokedex() : this.pokemonData.pokemons()
+  );
+
+  constructor() {
+    effect(() => {
+      if (this.usePokedex()) {
+        this.pokedexService.initializePokedex();
+      }
+    });
+  }
 
   selectedPokemons = signal<Pokemon[]>([]);
 

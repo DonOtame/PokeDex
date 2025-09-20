@@ -7,4 +7,6 @@ export * from './poke-filters-data.service';
 export * from './pokedex.service';
 export * from './pokemon-api.service';
 export * from './pokemon-data.service';
+export * from './team-data.service';
+export * from './teams.service';
 export * from './toast.service';

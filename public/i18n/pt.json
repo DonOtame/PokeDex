@@ -122,9 +122,33 @@
     "showAll": "Ver todos",
     "showLess": "Ver menos"
   },
+
+  "myTeamsPage": {
+    "myTeams": "Meus times",
+    "manageYourTeams": "Crie e gerencie seus times de Pokémon",
+    "newTeam": "Novo time"
+  },
+
   "pokemonRecomended": {
     "region": "Região",
     "power": "Poder"
+  },
+
+  "teamForm": {
+    "teamName": "Nome do time",
+    "maxMembers": "Limite de Pokémons (opcional)",
+    "teamMembersDescription": "Defina quantos pokémons podem estar em seu time."
+  },
+
+  "teamSummary": {
+    "typesDistribution": "Distribuição de tipos",
+    "teamStats": "Estatísticas do time",
+    "createdOn": "Criado em",
+    "hp": "PS",
+    "attack": "Ataque",
+    "defense": "Defesa",
+    "speed": "Velocidade",
+    "specialAttack": "Ataque Especial"
   },
 
   "pokemonType": {

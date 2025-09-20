@@ -127,6 +127,29 @@
     "power": "Power"
   },
 
+  "myTeamsPage": {
+    "myTeams": "My Teams",
+    "manageYourTeams": "Create and manage your Pokémon teams",
+    "newTeam": "New Team"
+  },
+
+  "teamForm": {
+    "teamName": "Name of the team",
+    "maxMembers": "Limit of Pokémon (optional)",
+    "teamMembersDescription": "Define how many Pokémon can be in your team."
+  },
+
+  "teamSummary": {
+    "typesDistribution": "Types Distribution",
+    "teamStats": "Team Statistics",
+    "createdOn": "Created On",
+    "hp": "HP",
+    "attack": "Attack",
+    "defense": "Defense",
+    "speed": "Speed",
+    "specialAttack": "Special Attack"
+  },
+
   "pokemonType": {
     "normal": "Normal",
     "fighting": "Fighting",
