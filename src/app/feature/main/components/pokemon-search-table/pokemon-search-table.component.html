@@ -61,7 +61,7 @@
       </td>
       <td class="w-1/8">{{ pokemon.name | titlecase }}</td>
       <td class="w-1/8">
-        <div class="flex flex-wrap">
+        <div class="flex flex-nowrap">
           @for (type of pokemon.types; track $index) {
           <pokemon-types [type]="type" />
           }
