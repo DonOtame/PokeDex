@@ -7,7 +7,7 @@ import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
 import { TranslateModule } from '@ngx-translate/core';
 import { getTypeColor, lighten } from '@shared/utils';
-import { PokemonTypesComponent } from '../pokemon types/pokemon types.component';
+import { PokemonTypesComponent } from '@feature/main/components/pokemon-types/pokemon-types.component';
 
 @Component({
   selector: 'pokemon-search-table',

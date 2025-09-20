@@ -7,7 +7,7 @@ import { lighten, getTypeColor } from '@shared/utils';
 @Component({
   selector: 'pokemon-types',
   imports: [CommonModule, TranslateModule],
-  templateUrl: './pokemon types.component.html',
+  templateUrl: './pokemon-types.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PokemonTypesComponent {

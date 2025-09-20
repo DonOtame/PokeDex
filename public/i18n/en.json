@@ -102,6 +102,31 @@
     "weight": "Weight"
   },
 
+  "homePage": {
+    "welcomeMessage": "Welcome",
+    "summary": "Summary",
+    "capturedPokemons": "Captured Pokémons",
+    "of": "of",
+    "available": "available",
+    "ofProgress": "of progress",
+    "averageLevel": "Average Level",
+    "ofCollection": "of your collection",
+    "favoriteType": "Favorite Type",
+    "moreCollection": "most collected",
+    "experienceCount": "Experience",
+    "experienceAmount": "accumulated points",
+    "powerfulPokemon": "Most powerful Pokémon",
+    "ofTotalPower": "of total power",
+    "myPokemons": "My Pokémons",
+    "recommendedPokemons": "Recommended",
+    "showAll": "See All",
+    "showLess": "Show Less"
+  },
+  "pokemonRecomended": {
+    "region": "Region",
+    "power": "Power"
+  },
+
   "pokemonType": {
     "normal": "Normal",
     "fighting": "Fighting",

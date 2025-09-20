@@ -102,6 +102,31 @@
     "weight": "Peso"
   },
 
+  "homePage": {
+    "welcomeMessage": "Bem-vindo",
+    "summary": "Resumo",
+    "capturedPokemons": "Pokémon Capturados",
+    "of": "de",
+    "available": "disponíveis",
+    "ofProgress": "de progresso",
+    "averageLevel": "Nível médio",
+    "ofCollection": "de sua coleção",
+    "favoriteType": "Tipo favorito",
+    "moreCollection": "mais coletados",
+    "experienceCount": "Experiência",
+    "experienceAmount": "Quantidade",
+    "powerfulPokemon": "Pokémon mais forte",
+    "ofTotalPower": "do poder total",
+    "myPokemons": "Meus Pokémons",
+    "recommendedPokemons": "Recomendados",
+    "showAll": "Ver todos",
+    "showLess": "Ver menos"
+  },
+  "pokemonRecomended": {
+    "region": "Região",
+    "power": "Poder"
+  },
+
   "pokemonType": {
     "normal": "Normal",
     "fighting": "Lutador",
